@@ -14,7 +14,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import avatar from '../images/avatar.jpg';
+import avatar from '../images/ProfPicCropped.jpg';
 import '../styles/global';
 
 const Divider = styled(ParallaxLayer)`
@@ -161,9 +161,9 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Hello, <br /> I'm John Doe.
+            Hello, <br /> I'm Michael Logan.
           </BigTitle>
-          <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+          <Subtitle>I'm a Software Engineer whose passion lies in computer vision, fulfilling gameplay experiences and creative problem-solving.</Subtitle>
         </Hero>
       </Content>
       <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={1} factor={2} />
@@ -179,27 +179,21 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
           <ProjectsWrapper>
             <ProjectCard
               fluid={p1.childImageSharp.fluid}
-              title="Eagle"
-              alt="Eagle - Animal Composing"
-              link="https://www.behance.net/gallery/38068151/Eagle"
+              title="3DAR"
+              alt="3D Augmented Reality App"
+              link="https://www.youtube.com/channel/UCK0XmRCh8GdtvOvDBH3F-0w"
             />
             <ProjectCard
               fluid={p2.childImageSharp.fluid}
-              title="Tomb Raider"
-              alt="Tomb Raider - Wallpaper"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
+              title="The Gauntlet Prismatic"
+              alt="First Person Dungeon Crawler"
+              link="https://www.youtube.com/channel/UCK0XmRCh8GdtvOvDBH3F-0w"
             />
             <ProjectCard
               fluid={p3.childImageSharp.fluid}
-              title="Harry Potter"
-              alt="Harry Potter Fanart"
-              link="https://www.behance.net/gallery/52915793/Harry-Potter"
-            />
-            <ProjectCard
-              fluid={p4.childImageSharp.fluid}
-              title="PROPRIUS"
-              alt="Instagram 366 Day Challenge"
-              link="https://www.behance.net/gallery/61747105/Best-of-PROPRIUS-2016"
+              title="Personal Game Engine"
+              alt="Direct-X 11"
+              link="https://www.youtube.com/channel/UCK0XmRCh8GdtvOvDBH3F-0w"
             />
           </ProjectsWrapper>
         </Inner>
@@ -248,20 +242,44 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
       </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
-          <Title>About</Title>
+          <Title>Resume</Title>
           <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
+            <Avatar src={avatar} alt="ML Headshot" />
             <AboutSub>
-              The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-              Emoji into my speech to better express myself. Winky face.
+              My objective is to obtain a position as a C++ Software Engineer in the game industry, 
+              with a focus in developing fulfilling game experiences through sophisticated programming, 
+              creative game-systems design and effective teamwork.
+            </AboutSub>
+          </AboutHero>
+          <Title> Project Experience</Title>
+          <AboutHero>
+            <AboutSub>
+            Augmented Reality (“3DAR”) – OpenCV Personal Project
+            •	Linked the library to my DirectX11 engine after building the binaries from source files using CMake 
+            •	Utilized different methods to calibrate cameras based on their intrinsic/distortional properties, to convert colors, for thresholding, line detection and 2D to 3D projection
+            •	Integrated video-capture into the rendering pipeline for further image processing
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+          Augmented Reality (“3DAR”) – OpenCV
+          Personal Project
+          •	Linked the library to my DirectX11 engine after building the binaries from source files using CMake 
+          •	Utilized different methods to calibrate cameras based on their intrinsic/distortional properties, to convert colors, for thresholding, line detection and 2D to 3D projection
+          •	Integrated video-capture into the rendering pipeline for further image processing
+
+          Game Engine – DirectX 11										June 2017 – present 
+          School Project
+          •	Implemented custom built libraries alongside third-party libraries such as OpenCV, imGUI, and Assimp
+          •	Customized a template library to support arithmetic, vector, matrix and quaternion math operations
+          •	Developed a graphics library to support terrain generation, mesh building, model importing, and shader lighting
+
+          The Gauntlet Prismatic – Unreal Engine                                                                                                             April – December 2017
+          Gameplay Programmer
+          •	Supported the development of a component-based projectile system that utilized “modifiers” to determine spell functionality and visuals
+          •	Worked in tandem with designers to ensure proper implementation of our desired gameplay mechanics
+          •	Responsible for refactoring and optimizing spell-related code
+          •	Developed a strong foundation for working with source control in a large, team-based project
+
           </AboutDesc>
         </Inner>
       </Content>
@@ -285,14 +303,14 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            Say <a href="mailto:michael.logan.duxbury@gmail.com">Hi</a> or find me on other platforms:{' '}
+            <a href="https://www.linkedin.com/michaeldlogan">Linkedin</a> &{' '}
+            <a href="https://www.facebook.com/bubblymike/">Facebook</a>
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LeKoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
+          &copy; 2018 by Michael Logan.{' '}
+          <a href="https://github.com/BubbleFeet/ProjectWork">Github Repository</a>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>
@@ -322,28 +340,28 @@ Index.propTypes = {
 
 export const query = graphql`
   query IndexQuery {
-    p1: file(relativePath: { regex: "/project_1.jpg/" }) {
+    p1: file(relativePath: { regex: "/3DAR.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    p2: file(relativePath: { regex: "/project_2.jpg/" }) {
+    p2: file(relativePath: { regex: "/TGP.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    p3: file(relativePath: { regex: "/project_3.jpg/" }) {
+    p3: file(relativePath: { regex: "/SHIPS.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    p4: file(relativePath: { regex: "/project_4.jpg/" }) {
+    p4: file(relativePath: { regex: "/SHIPS.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
